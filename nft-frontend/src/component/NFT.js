@@ -18,7 +18,7 @@ function MnFT(){
     return (
         <div className="nft">
             <img src={NFT.prop.image.description} alt="Anime NFT"/>
-            <h1>Metadata</h1>
+            <h4>Metadata</h4>
             <p>Name: {NFT.prop.name.description}</p>
             <p>Description: {NFT.prop.description.description}</p> 
             <p>Image: {NFT.prop.image.description}</p>    
