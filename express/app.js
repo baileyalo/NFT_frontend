@@ -41,12 +41,12 @@ router.get('/nft', function(req, res) {
     res.send(NFT);
 });
 //test post using postman
-//router.post('/nft', function(req, res) {    
-  //  var Nft = req.body;
- //   console.log (Nft);
+router.post('/nft', function(req, res) {    
+    var Nft = req.body;
+   console.log (Nft);
  //   NFT.push(Nft);
- //   res.send('NFT Metadata added');
-//});
+   res.send('NFT Metadata added');
+});
 
 
 app.use('/api', router);
