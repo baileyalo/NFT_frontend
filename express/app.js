@@ -28,8 +28,7 @@ const NFT = {
           "description": "https://gateway.pinata.cloud/ipfs/Qmcy1NtKnpeduKDFXjLGHnqTa6kN4tzQ8ekUsMVHysf8Qj"
       }
   }
-}
-  ;
+};
 //routes
 app.use(express.static(__dirname+'/api'));
 router.get('/', function(req, res) {
