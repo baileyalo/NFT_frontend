@@ -1,0 +1,30 @@
+{
+  "name": "erc-721-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baileyalo/ERC-721-Token.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baileyalo/ERC-721-Token/issues"
+  },
+  "homepage": "https://github.com/baileyalo/ERC-721-Token#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.8.2"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.9",
+    "@openzeppelin/contracts": "^4.4.1",
+    "dotenv": "^10.0.0",
+    "ipfs-http-client": "^55.0.0"
+  }
+}
