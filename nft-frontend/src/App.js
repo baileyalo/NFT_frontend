@@ -9,29 +9,22 @@ class App extends Component {
           this.setState({loading: true
           }, () => {
               fetch("http://localhost:3000/api/nft").then(res => res.json()).then(result => this.setState({
-                  loading: false,nft: result
+                  loading: false,NFT: result
               })).catch(console.log);
           });
       }
       componentDidMount() {this.getNft();
       }
       render() {
-          const {NFT,error} = this.state;
+          const {NFT} = this.state;
           return (
             <React.Fragment>
             <h1>NFT</h1>
-            {
-                  error ? <p>
-            {
-                      error.message
-                  } </p> : null}  {
-                      NFT.map((nft1, n) => {
-                          const {
-                             attributes,value,description,image
-                          } = nft1;
-                          return (
-                          <div key={n}><p>Trait Type: {attributes}</p><p>Value: {value}</p>
-                              <p>Description: {description}</p><p>Image Tag: {image}</p>
+           {
+                      NFT.map((nft1, key) => {                         
+                        return (
+                          <div key={key}><p>Trait Type: {nft1.attributes}</p><p>Value: </p>
+                              <p>Description: {nft1.description}</p><p>Image Tag: src={nft1.image}</p>
                               <hr />
                           </div>
                           );
