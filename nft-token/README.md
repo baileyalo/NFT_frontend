@@ -10,6 +10,7 @@ npx hardhat compile
 
 DEPLOY
 npx hardhat --network rinkeby run scripts/deploy.js
+deployed on rinkeby testnet
 
 MINT
 node scripts/mint.js 
