@@ -4,15 +4,14 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
-contract NFT is ERC721URIStorage, Ownable {
+contract NFT is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
     constructor() ERC721("NFT", "NFT") {}
 
-    function mintNFT(address recipient, string memory tokenURI)
+    function mintNFT(address recipient)
         public onlyOwner
         returns (uint256)
     {
@@ -20,11 +19,11 @@ contract NFT is ERC721URIStorage, Ownable {
 
         uint256 newItemId = _tokenIds.current();
         _mint(recipient, newItemId);
-        _setTokenURI(newItemId, tokenURI);
+       // _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
     }
-     function BaseURI() internal pure returns (string memory){
-       return "http://localhost:3000/api/nft";
-   }
+     function GetURI() public pure returns (string memory){
+        return "http://localhost:3000/api/nft";
+    }
 }
