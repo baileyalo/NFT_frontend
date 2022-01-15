@@ -1,6 +1,6 @@
 # NFT_frontend
 Front end of NFT done using React.js
-paste contract address: "" in NFT.js file in SRC folder
+paste contract address: "" in NFT.js file in src/component folder
 To run: NPM START
 
 Deploy and Mint Token
