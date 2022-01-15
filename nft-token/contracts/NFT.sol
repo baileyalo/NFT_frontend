@@ -24,7 +24,7 @@ contract NFT is ERC721URIStorage, Ownable {
 
         return newItemId;
     }
-     function _baseURI() internal pure override  returns (string memory){
+     function BaseURI() internal pure returns (string memory){
        return "http://localhost:3000/api/nft";
    }
 }
