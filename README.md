@@ -1,4 +1,16 @@
 # NFT_frontend
+This project is involves creating a simple NFT Token and then the Token was minted on 'Rinkeby network' and a Frontend was developed in react to display NFT in a simple marketplace and the NFT metadata.
+
+
+Technologies and Framework used :
+
+1. Node.js
+2. React
+3. HardHat
+4. Metamask
+5. Express js
+
+
 Front end of NFT done using React.js
 paste contract address: "" in NFT.js file in src/component folder
 To run: NPM START
